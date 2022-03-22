@@ -47,7 +47,7 @@ function CardForm({creditCards, setCreditCards}) {
         // console.log(idGenerator());
 
     return (
-        <div className="CardForm">
+        <CardformWrapper>
             <form action="submit" onSubmit={ AddingCard }>
             <section className="cardnumber">
             <label> Card number
@@ -56,7 +56,7 @@ function CardForm({creditCards, setCreditCards}) {
             </section>
 
             <section className="cardname">
-            <label> Card holder name
+            <label> Cardholder name
                 <input type="text" name="cardname" placeholder="Firstname & Lastname" required />
             </label>
             </section>
@@ -85,65 +85,27 @@ function CardForm({creditCards, setCreditCards}) {
                 </label>
             </section>
         
-             <button type="submit" value="submit" placeholder="ADD CARD">Add Card!</button>
+             <button type="submit" value="submit" placeholder="ADD CARD" className="addCardBtn">Add Card!</button>
             </form>
-        </div>
+        </CardformWrapper>
     )
 }
 
-const cardformWrapper = styled.section `
-/* width: 500px;
-  height: 350px;
-  position: absolute;
+const CardformWrapper = styled.section `
+
+
 
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-width: 400px;
-    .card-number-container,
-    .card-name-container,
-    .valid-cvv-container,
-    .vendor-select-container,
-    .btn-container {
-      margin-top: 1rem;
-      min-width: 320px;
-      p {
-        font-size: 0.8rem;
-        color: #5c5959;
-      }
-      .date-input {
-        font-size: 0.7rem;
-      }
-      input,
-      select {
-        all: unset;
-        border: 1px solid #b6b3b3;
-        padding: 0.8rem 1.5rem;
-        border-radius: 8px;
-        width: 80%;
-        -moz-appearance: textfield;
-      }
-    }
-    .valid-cvv-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .cvv-container,
-      .valid-container {
-        input {
-          width: 100px;
-        }
-      }
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      button {
-        all: unset;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+
+ .addCardBtn {
+ all: unset;
         color: #fff;
         background-color: #000;
+        margin-top: 2rem;
         font-size: 1.2rem;
         padding: 1rem 2rem;
         cursor: pointer;
@@ -152,23 +114,21 @@ form {
         text-align: center;
         &:hover {
           background-color: #201e1e;
-        }
-      }
-    }
   }
-  .date-input {
-    color: transparent;
+}
+.cardnumber, .cardname, .validCcvName, .validCcvInput, .vendor {
+  margin-top: 1rem;
+
+  
+  input, select{
+    padding: 10px;
+   
   }
-  .error {
-    animation: blinker 1s linear infinite;
   }
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-      color: red;
-    }
-  } */
+}
 `
+
+
 export default CardForm;
 
 //  function AddingCard() {

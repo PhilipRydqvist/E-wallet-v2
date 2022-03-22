@@ -23,11 +23,15 @@ function AddCard ({creditCards, setCreditCards}) {
         // <h1> Detta är AddCard sidan</h1>
         <AddCardWrapper>
         <Top headline="ADD A NEW BANK CARD" />
+        
+        <div className="showNewCard">
         <p>NEW CARD</p>
         { creditCardsEmpty.map((card) => (
             <Card  key={card.id}
             {...card}/>
         )) }
+        </div>
+
         <CardForm creditCards={ creditCards } setCreditCards={ setCreditCards }/>
         
         </AddCardWrapper>
@@ -44,9 +48,19 @@ const AddCardWrapper = styled.section`
   
   flex-direction: column; 
   
-  .addCardButton {
-    
-  }
+.showNewCard {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    position: relative;  
+}
+
+p {
+   text-align: center; 
+}
+  
+
     
 `
 export default AddCard;

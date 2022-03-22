@@ -36,6 +36,12 @@ function DeleteButton({ creditCards, setCreditCards, activeCreditCard, setActive
 export default DeleteButton
 
 const DeleteButtonWrapper = styled.button`
-    
+    all: unset;
+    text-align: center;
+    padding: 10px;
+    width: 10%;
+    align-items: center;
+    margin-bottom: 200px;
+
 
 `

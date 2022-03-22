@@ -53,6 +53,37 @@ const HomeWrapper = styled.section`
   align-items: center;
   flex-direction: column; 
 
+  .activecard-container,
+  .cardstack-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    align-items: center;
+  
+  }
+
+.cardstack-container {
+  margin-top: 3rem;
+}
+
+  .addCardButton {
+    all: unset;
+  color: #000;
+  margin-top: 2rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 0.3rem;
+  &:hover {
+    background-color: grey;
+  }
+  }
+
 /* .headline-container {
   display: flex; 
   position: relative; 
@@ -66,12 +97,7 @@ const HomeWrapper = styled.section`
   flex-direction: column;
 }
 
-.activecard-container {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-}
+
 
 .cardstack-container {
   display: flex;
