@@ -84,42 +84,6 @@ const HomeWrapper = styled.section`
   }
   }
 
-/* .headline-container {
-  display: flex; 
-  position: relative; 
-  flex-direction: column;
-  align-items: center;
-}
-  
-.header {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-
-
-
-.cardstack-container {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
-
-.addCardButton {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  }  */
 `
 
 export default Home;
-
-//  <section>
-        //  <button onClick= { Link to="add" }></button>
-        //  </section>
-        
-        //  <button
-        //       <Link to="/add">AddCard</Link>
-        //  />

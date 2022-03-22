@@ -95,23 +95,6 @@ function Card ({id, cardNumber, cardHolderName, cardValidDate, vendorColor, vend
     text-align: center;
   }
 
-  .cardholder {
-    
-  }
-
-  .cardholdername-container {
-  
-  
-  }
-
-  .cardvalidthru{
-  
-  }
-
-  .cardvaliddate {
-  
-  }
-
 &:nth-last-child(5) {
   --y: calc(-50% + -110px);
   transform: translate(-50%, var(--y)) scale(0.9);
